@@ -59,7 +59,7 @@ You cannot have an *exclusive* and a *shared* use of a value at the same time. (
 
 #### Low level model
 
-It is good when you are reasoning about *unsafe code* and *raw pointes*.
+It is good when you are reasoning about *unsafe code* and *raw pointers*.
 
 ### Memory regions
 
