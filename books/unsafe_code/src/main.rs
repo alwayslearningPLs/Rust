@@ -1,13 +1,13 @@
+mod raw_pointer;
 
 fn main() {
+    raw_pointer::references();
+
     do_not_use_unsafe_code();
     get_uncheck_test();
     mem_test();
 }
-
-#[forbid(unsafe_code)]
-fn do_not_use_unsafe_code() {}
-
+#[forbid(unsafe_code)] fn do_not_use_unsafe_code() {}
 #[allow(dead_code)]
 unsafe fn hello() {}
 
@@ -50,7 +50,7 @@ fn get_uncheck_test() {
         assert_eq!(v_new.get_unchecked(0), &2u8);
     }
 
-    println!("{:?}", v_new);
+    assert_eq!(format!("{:?}", v_new), "[2]");
 }
 
 fn mem_test() {
