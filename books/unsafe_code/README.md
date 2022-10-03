@@ -10,4 +10,8 @@ You can use `unsafe` to indicate the existence of unchecked contracts on _functi
 Some examples:
 
 - `slice::get_unchecked`, which performs unchecked indexing, allowing memory safety to be freely violated.
-- `mem::transmute` reinterprets some value as having a give type, bypassing type safety in arbitraty ways 
+- `mem::transmute` reinterprets some value as having a give type, bypassing type safety in arbitraty ways
+
+## Reference
+
+- https://doc.rust-lang.org/nomicon/safe-unsafe-meaning.html
